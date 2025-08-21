@@ -28,7 +28,7 @@ export default function MdxContent({ children = "" }: { children?: string }) {
               return (
                 <pre
                   className={[
-                    "my-3 overflow-x-auto rounded-md p-3",
+                    "my-3 overflow-x-auto p-3",
                     "ring-1 ring-gray-300/80 bg-gray-100",
                     "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a]",
                   ].join(" ")}
@@ -40,7 +40,7 @@ export default function MdxContent({ children = "" }: { children?: string }) {
             return (
               <code
                 className={[
-                  "rounded px-1 py-0.5",
+                  "px-1 py-0.5",
                   "bg-gray-100 ring-1 ring-gray-300/80",
                   "dark:bg-[#1a1a1a] dark:ring-[#4d4d4d]",
                 ].join(" ")}

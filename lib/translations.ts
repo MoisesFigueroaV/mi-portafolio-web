@@ -11,7 +11,7 @@ export const translations = {
 
     // Header
     portfolio: "{ portfolio }",
-    designer_developer: "Tu Nombre — Diseñador & Desarrollador.",
+    designer_developer: "Moisés Figueroa — Desarrollador FullStack.",
 
     // Intro paragraphs
     intro_1: "Creo interfaces sobrias y rápidas. Me interesan los sistemas de diseño, accesibilidad y performance.",
@@ -43,17 +43,17 @@ export const translations = {
     viewer: "{ viewer }",
 
     // Contact
-    email: "hello@example.com",
-    github: "github.com/you",
-    cv: "CV",
+  email: "Correo Electronico",
+  github_link: "GitHub",
+  twitter_link: "X",
+  cv: "CV",
 
     // Aside
     address: "Address",
-    location: "Ciudad — País\nRemoto / Híbrido",
+    location: "Concepción — Chile\nRemoto / Híbrido",
     social: "Social",
     navigation: "Navigation",
-    github_link: "github",
-    twitter_link: "twitter",
+  // github_link y twitter_link ya definidos arriba
 
     // Timeline
     current: "Actual",

@@ -21,7 +21,7 @@ export default function TechStack({
       {items.map((it) => (
         <div
           key={it.name}
-          className="rounded-md p-3 ring-1 ring-gray-300/80 bg-white text-gray-700 dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc]"
+          className="p-3 bg-white text-gray-700 dark:bg-[#1a1a1a] dark:text-[#cccccc]"
         >
           <div className="mb-1 flex items-center gap-2">
             <BadgeCheck className="h-4 w-4 text-green-500" />
@@ -32,13 +32,13 @@ export default function TechStack({
             {it.tags?.map((t) => (
               <span
                 key={t}
-                className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
+                className="px-2 py-0.5 text-[10px] text-gray-500 dark:text-[#4d4d4d]"
               >
                 {t}
               </span>
             ))}
             {it.role && (
-              <span className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]">
+              <span className="px-2 py-0.5 text-[10px] text-gray-500 dark:text-[#4d4d4d]">
                 {it.role}
               </span>
             )}

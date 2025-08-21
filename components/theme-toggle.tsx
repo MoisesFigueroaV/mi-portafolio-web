@@ -13,7 +13,7 @@ export default function ThemeToggle() {
   if (!mounted) {
     return (
       <button
-        className="inline-flex h-9 w-9 items-center justify-center rounded border border-gray-300 text-xs hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:border-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:focus-visible:ring-[#4d4d4d]"
+  className="inline-flex h-9 w-9 items-center justify-center text-xs hover:bg-gray-200 focus-visible:outline-none dark:hover:bg-[#1a1a1a]"
         aria-label="Cambiar tema"
         title="Cambiar tema"
       >
@@ -35,7 +35,7 @@ export default function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="inline-flex h-9 w-9 items-center justify-center rounded border border-gray-300 text-xs hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:border-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:focus-visible:ring-[#4d4d4d]"
+  className="inline-flex h-9 w-9 items-center justify-center text-xs hover:bg-gray-200 focus-visible:outline-none dark:hover:bg-[#1a1a1a]"
       aria-label="Cambiar tema"
       title="Cambiar tema"
     >

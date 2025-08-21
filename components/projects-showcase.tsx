@@ -12,11 +12,11 @@ export default function ProjectsShowcase({ projects = [] as Project[] }) {
           key={p.title}
           onClick={() => openProject(p)}
           className={[
-            "group w-full overflow-hidden rounded-lg text-left",
-            "ring-1 ring-gray-300/80 bg-white transition-all",
-            "hover:-translate-y-0.5 hover:ring-gray-400",
-            "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:hover:ring-[#cccccc]",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:focus-visible:ring-[#4d4d4d]",
+            "group w-full overflow-hidden text-left",
+            "bg-white transition-all",
+            "hover:-translate-y-0.5",
+            "dark:bg-[#1a1a1a] dark:hover:bg-[#cccccc]",
+            "focus-visible:outline-none",
           ].join(" ")}
           style={{ animationDelay: `${60 + i * 40}ms` }}
           aria-label={`Ver proyecto: ${p.title}`}

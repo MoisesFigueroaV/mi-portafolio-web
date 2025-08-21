@@ -82,7 +82,7 @@ export default function SearchBar({ onResultClick }: { onResultClick?: (result: 
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setIsOpen(true)}
-          className="w-full rounded-md border border-gray-300 bg-white pl-10 pr-10 py-2 text-sm focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:border-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc] dark:focus:border-[#cccccc]"
+          className="w-full border border-gray-300 bg-white pl-10 pr-10 py-2 text-sm focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:border-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc] dark:focus:border-[#cccccc]"
         />
         {query && (
           <button
@@ -99,7 +99,7 @@ export default function SearchBar({ onResultClick }: { onResultClick?: (result: 
       </div>
 
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full left-0 right-0 z-50 mt-1 rounded-md border border-gray-300 bg-white shadow-lg dark:border-[#4d4d4d] dark:bg-[#1a1a1a]">
+  <div className="absolute top-full left-0 right-0 z-50 mt-1 border border-gray-300 bg-white shadow-lg dark:border-[#4d4d4d] dark:bg-[#1a1a1a]">
           {results.map((result, i) => (
             <button
               key={i}
@@ -107,7 +107,7 @@ export default function SearchBar({ onResultClick }: { onResultClick?: (result: 
                 result.onClick()
                 setIsOpen(false)
               }}
-              className="w-full px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-[#000000] first:rounded-t-md last:rounded-b-md"
+              className="w-full px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-[#000000]"
             >
               <div className="flex items-center gap-2">
                 <span className="text-xs text-gray-500 dark:text-[#4d4d4d]">

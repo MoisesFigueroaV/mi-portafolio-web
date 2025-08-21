@@ -11,12 +11,12 @@ export function EnhancedProjectCard({ project, delay = 0 }: { project: Project; 
   return (
     <div
       className={[
-        "group w-full overflow-hidden rounded-lg text-left",
-        "ring-1 ring-gray-300/80 bg-white transition-all duration-300",
-        "hover:-translate-y-1 hover:shadow-lg hover:ring-gray-400",
+  "group w-full overflow-hidden text-left",
+  "bg-white transition-all duration-300",
+  "hover:-translate-y-1 hover:shadow-lg",
         "active:translate-y-0 active:shadow-md", // Estados activos para móvil
-        "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:hover:ring-[#cccccc] dark:hover:shadow-2xl",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:focus-visible:ring-[#4d4d4d]",
+  "dark:bg-[#1a1a1a] dark:hover:shadow-2xl",
+  "focus-visible:outline-none",
       ].join(" ")}
       style={{ animationDelay: `${delay}ms` }}
     >
@@ -55,13 +55,13 @@ export function EnhancedProjectCard({ project, delay = 0 }: { project: Project; 
             {project.tags?.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
+                className="px-2 py-0.5 text-[10px] text-gray-500 dark:text-[#4d4d4d]"
               >
                 {tag}
               </span>
             ))}
             {project.tags && project.tags.length > 3 && (
-              <span className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]">
+              <span className="px-2 py-0.5 text-[10px] text-gray-500 dark:text-[#4d4d4d]">
                 +{project.tags.length - 3}
               </span>
             )}
@@ -79,12 +79,12 @@ export function EnhancedBlogCard({ post, delay = 0 }: { post: Post; delay?: numb
     <button
       onClick={() => openPost(post)}
       className={[
-        "group w-full rounded-lg p-3 text-left",
-        "ring-1 ring-gray-300/80 bg-white transition-all duration-300",
-        "hover:-translate-y-0.5 hover:shadow-md hover:ring-gray-400",
+  "group w-full p-3 text-left",
+  "bg-white transition-all duration-300",
+  "hover:-translate-y-0.5 hover:shadow-md",
         "active:translate-y-0 active:shadow-sm", // Estados activos para móvil
-        "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:hover:ring-[#cccccc] dark:hover:shadow-xl",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:focus-visible:ring-[#4d4d4d]",
+  "dark:bg-[#1a1a1a] dark:hover:shadow-xl",
+  "focus-visible:outline-none",
       ].join(" ")}
       style={{ animationDelay: `${delay}ms` }}
       aria-label={`Leer post: ${post.title}`}

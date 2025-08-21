@@ -25,7 +25,7 @@ export default function ProjectTile({
     <button
       onClick={onSelect}
       className={[
-        "group w-full overflow-hidden rounded-lg text-left",
+  "group w-full overflow-hidden text-left",
         "ring-1 ring-gray-300/80 bg-white transition-all",
         "hover:-translate-y-0.5 hover:ring-gray-400",
         "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:hover:ring-[#cccccc]",
@@ -51,7 +51,7 @@ export default function ProjectTile({
           {tags?.map((t) => (
             <span
               key={t}
-              className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
+              className="px-2 py-0.5 text-[10px] text-gray-500 dark:text-[#4d4d4d]"
             >
               {t}
             </span>

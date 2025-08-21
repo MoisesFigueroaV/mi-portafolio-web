@@ -39,7 +39,7 @@ export default function ActiveSectionIndicator() {
           <button
             key={section.id}
             onClick={() => document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" })}
-            className={`group relative w-3 h-3 rounded-full transition-all ${
+            className={`group relative w-3 h-3 transition-all ${
               activeSection === section.id
                 ? "bg-gray-900 dark:bg-[#ffffff]"
                 : "bg-gray-300 dark:bg-[#4d4d4d] hover:bg-gray-400 dark:hover:bg-[#cccccc]"

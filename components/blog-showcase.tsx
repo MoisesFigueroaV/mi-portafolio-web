@@ -12,10 +12,10 @@ export default function BlogShowcase({ posts = [] as Post[] }) {
           key={p.title}
           onClick={() => openPost(p)}
           className={[
-            "group w-full rounded-lg p-3 text-left",
-            "ring-1 ring-gray-300/80 bg-white transition-all hover:-translate-y-0.5 hover:ring-gray-400",
-            "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:hover:ring-[#cccccc]",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:focus-visible:ring-[#4d4d4d]",
+            "group w-full p-3 text-left",
+            "bg-white transition-all hover:-translate-y-0.5",
+            "dark:bg-[#1a1a1a] dark:hover:bg-[#cccccc]",
+            "focus-visible:outline-none",
           ].join(" ")}
           style={{ animationDelay: `${60 + i * 40}ms` }}
           aria-label={`Leer post: ${p.title}`}

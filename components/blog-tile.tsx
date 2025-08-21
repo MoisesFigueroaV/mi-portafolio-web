@@ -19,7 +19,7 @@ export default function BlogTile({
     <button
       onClick={onSelect}
       className={[
-        "group w-full rounded-lg p-4 text-left",
+  "group w-full p-4 text-left",
         "ring-1 ring-gray-300/80 bg-white transition-all hover:-translate-y-0.5 hover:ring-gray-400",
         "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:hover:ring-[#cccccc]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:focus-visible:ring-[#4d4d4d]",

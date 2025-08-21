@@ -107,11 +107,11 @@ export function ViewerProvider({ children }: { children: React.ReactNode }) {
             role="dialog"
           >
             {/* Header mejorado para móvil */}
-            <div className="flex items-center justify-between gap-3 px-3 py-3 sm:px-4 sm:py-4 border-b border-gray-300/80 dark:border-[#4d4d4d]">
+            <div className="flex items-center justify-between gap-3 px-3 py-3 sm:px-4 sm:py-4">
               <button
                 ref={backBtnRef}
                 onClick={close}
-                className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 active:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:active:bg-[#000000] dark:focus-visible:ring-[#4d4d4d] transition-colors"
+                className="inline-flex items-center gap-2 px-3 py-2 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 active:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:active:bg-[#000000] dark:focus-visible:ring-[#4d4d4d] transition-colors"
               >
                 <ArrowLeft className="h-4 w-4" />
                 <span className="hidden sm:inline">{t("back")}</span>
@@ -155,7 +155,7 @@ function ProjectContent(p: Project) {
       <img
         src={p.image || "/placeholder.svg"}
         alt={`Vista de ${p.title}`}
-        className="mb-4 sm:mb-5 w-full rounded-md ring-1 ring-gray-300/80 dark:ring-[#4d4d4d]"
+  className="mb-4 sm:mb-5 w-full ring-1 ring-gray-300/80 dark:ring-[#4d4d4d]"
       />
 
       {p.body ? (
@@ -169,7 +169,7 @@ function ProjectContent(p: Project) {
           {p.tags.map((t) => (
             <span
               key={t}
-              className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
+              className="px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
             >
               {t}
             </span>
@@ -183,7 +183,7 @@ function ProjectContent(p: Project) {
             href={p.siteUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 active:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:active:bg-[#000000] dark:focus-visible:ring-[#4d4d4d] transition-colors"
+            className="inline-flex items-center gap-2 px-3 py-2 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 active:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:active:bg-[#000000] dark:focus-visible:ring-[#4d4d4d] transition-colors"
           >
             <ExternalLink className="h-4 w-4" />
             {t("site")}
@@ -194,7 +194,7 @@ function ProjectContent(p: Project) {
             href={p.repoUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 active:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:active:bg-[#000000] dark:focus-visible:ring-[#4d4d4d] transition-colors"
+            className="inline-flex items-center gap-2 px-3 py-2 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 active:bg-gray-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:active:bg-[#000000] dark:focus-visible:ring-[#4d4d4d] transition-colors"
           >
             <Github className="h-4 w-4" />
             {t("code")}

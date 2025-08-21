@@ -31,7 +31,7 @@ export default function ShareButton({ title, url }: { title: string; url?: strin
   return (
     <button
       onClick={handleShare}
-      className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#1a1a1a] dark:focus-visible:ring-[#4d4d4d]"
+  className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-200 focus-visible:outline-none dark:text-[#cccccc] dark:hover:bg-[#1a1a1a]"
     >
       {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
       {copied ? "Copiado" : "Compartir"}

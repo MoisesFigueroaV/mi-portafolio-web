@@ -39,7 +39,7 @@ export default function ProjectCard({
       <DialogTrigger asChild>
         <button
           className={[
-            "reveal group w-full rounded-md p-4 text-left",
+            "reveal group w-full p-4 text-left",
             "ring-1 ring-gray-300/80 bg-white text-gray-700 transition-all",
             "hover:bg-gray-200 hover:-translate-y-0.5 motion-safe:duration-300",
             "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc] dark:hover:bg-[#000000]",
@@ -54,7 +54,7 @@ export default function ProjectCard({
               <p className="truncate text-xs text-gray-500 dark:text-[#4d4d4d]">{subtitle}</p>
             </div>
             <span
-              className="inline-flex shrink-0 items-center rounded-md px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 transition-colors group-hover:bg-gray-900 group-hover:text-white dark:text-[#4d4d4d] dark:ring-[#4d4d4d] dark:group-hover:bg-[#ffffff] dark:group-hover:text-[#000000]"
+              className="inline-flex shrink-0 items-center px-2 py-0.5 text-[10px] text-gray-500 transition-colors group-hover:bg-gray-900 group-hover:text-white dark:text-[#4d4d4d] dark:group-hover:bg-[#ffffff] dark:group-hover:text-[#000000]"
               aria-hidden
             >
               Ver
@@ -65,7 +65,7 @@ export default function ProjectCard({
             {tags.map((t) => (
               <span
                 key={t}
-                className="rounded-md px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
+                className="px-2 py-0.5 text-[10px] text-gray-500 dark:text-[#4d4d4d]"
               >
                 {t}
               </span>
@@ -77,7 +77,7 @@ export default function ProjectCard({
       <DialogContent
         className={[
           "w-[92vw] max-w-none sm:max-w-xl md:max-w-2xl",
-          "max-h-[80vh] overflow-y-auto rounded-md",
+          "max-h-[80vh] overflow-y-auto",
           "ring-1 ring-gray-300/80 bg-white text-gray-700",
           "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc]",
         ].join(" ")}
@@ -94,7 +94,7 @@ export default function ProjectCard({
             href={siteUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
+            className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-200 focus-visible:outline-none dark:text-[#cccccc] dark:hover:bg-[#000000]"
           >
             <ExternalLink className="h-4 w-4" />
             Sitio
@@ -103,7 +103,7 @@ export default function ProjectCard({
             href={repoUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
+            className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 hover:bg-gray-200 focus-visible:outline-none dark:text-[#cccccc] dark:hover:bg-[#000000]"
           >
             <Github className="h-4 w-4" />
             Código

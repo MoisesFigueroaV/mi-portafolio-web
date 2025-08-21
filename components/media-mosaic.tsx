@@ -24,7 +24,7 @@ export default function MediaMosaic({ photos = [] as Photo[] }: { photos?: Photo
             alt={p.alt}
             loading="lazy"
             decoding="async"
-            className="mb-2 sm:mb-3 inline-block w-full cursor-zoom-in break-inside-avoid rounded-md ring-1 ring-gray-300/80 transition-all hover:opacity-90 active:opacity-95 dark:ring-[#4d4d4d]"
+            className="mb-2 sm:mb-3 inline-block w-full cursor-zoom-in break-inside-avoid transition-all hover:opacity-90 active:opacity-95"
             onClick={() => openPhoto(p)}
           />
         ))}
@@ -34,8 +34,8 @@ export default function MediaMosaic({ photos = [] as Photo[] }: { photos?: Photo
         <DialogContent
           className={[
             "max-w-[95vw] sm:max-w-4xl",
-            "bg-white p-1 sm:p-2 ring-1 ring-gray-300/80",
-            "dark:bg-[#000000] dark:ring-[#4d4d4d]",
+            "bg-white p-1 sm:p-2",
+            "dark:bg-[#000000]",
           ].join(" ")}
         >
           {/* DialogTitle oculto para accesibilidad */}
@@ -45,7 +45,7 @@ export default function MediaMosaic({ photos = [] as Photo[] }: { photos?: Photo
             <img
               src={current.src || "/placeholder.svg"}
               alt={current.alt}
-              className="mx-auto max-h-[85vh] w-auto rounded-md object-contain"
+              className="mx-auto max-h-[85vh] w-auto object-contain"
             />
           )}
           <p className="sr-only">{current?.alt || "Foto"}</p>

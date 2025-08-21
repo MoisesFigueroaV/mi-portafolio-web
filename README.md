@@ -1,6 +1,20 @@
+
 # Portafolio Web – Moisés Figueroa
 
-Este es el código fuente de mi portafolio personal, desarrollado con Next.js, React y Tailwind CSS. Aquí muestro mis proyectos, artículos técnicos y una galería de fotografías.
+## 🌱 Propósito y filosofía Open Source
+
+Este proyecto nació como una forma de mostrar mi trabajo y mis ideas, pero también como una herramienta abierta para la comunidad. Mi objetivo es que cualquier persona pueda tomar este portafolio como base, inspiración o punto de partida para crear el suyo propio, sin depender de plantillas genéricas ni de soluciones cerradas.
+
+El código está pensado para ser **claro, accesible y fácil de modificar**. Cada sección (proyectos, blog, galería) es modular y puedes adaptarla a tus necesidades. Si eres desarrollador/a, diseñador/a o simplemente quieres tener presencia profesional en la web, aquí tienes un ejemplo real y mantenido de cómo hacerlo con tecnologías modernas.
+
+**¿Qué puedes aprender o reutilizar de este repo?**
+- Cómo estructurar un portafolio profesional con Next.js y React
+- Componentes UI reutilizables y buenas prácticas de accesibilidad
+- Integración de temas, multilenguaje y animaciones
+- Organización de datos y contenido (proyectos, posts, fotos)
+- Ejemplo de despliegue y optimización para SEO
+
+Si mejoras o adaptas este portafolio, ¡me encantaría ver tu versión! Puedes hacer un fork, abrir issues o sugerencias, o simplemente inspirarte para tu propio sitio.
 
 ## 🚀 Tecnologías principales
 - **Next.js 14** (App Router, Server Components)

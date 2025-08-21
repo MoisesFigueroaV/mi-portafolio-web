@@ -7,7 +7,7 @@ export default function ThemeTransitions() {
       .theme-transition *,
       .theme-transition *::before,
       .theme-transition *::after {
-        transition: background-color 400ms ease, color 400ms ease, border-color 400ms ease, fill 400ms ease,
+  transition: background-color 400ms ease, color 400ms ease, fill 400ms ease,
           stroke 400ms ease, opacity 300ms ease, transform 300ms ease !important;
       }
 

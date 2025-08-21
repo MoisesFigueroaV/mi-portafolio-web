@@ -25,7 +25,7 @@ export default function Testimonials() {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {testimonials.map((testimonial, i) => (
-        <div key={i} className="rounded-md p-4 ring-1 ring-gray-300/80 bg-white dark:ring-[#4d4d4d] dark:bg-[#1a1a1a]">
+  <div key={i} className="p-4 bg-white dark:bg-[#1a1a1a]">
           <blockquote className="text-sm text-gray-600 dark:text-[#cccccc] mb-3">"{testimonial.quote}"</blockquote>
           <footer>
             <div className="font-medium text-sm">{testimonial.author}</div>

@@ -29,10 +29,10 @@ export default function PostCard({
       <DialogTrigger asChild>
         <button
           className={[
-            "reveal group w-full rounded-md p-3 text-left",
-            "ring-1 ring-gray-300/80 bg-white text-sm text-gray-700 transition-all hover:bg-gray-200 hover:-translate-y-0.5 motion-safe:duration-300",
-            "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc] dark:hover:bg-[#000000]",
-            "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:focus-visible:ring-[#4d4d4d]",
+            "reveal group w-full p-3 text-left",
+            "bg-white text-sm text-gray-700 transition-all hover:bg-gray-200 hover:-translate-y-0.5 motion-safe:duration-300",
+            "dark:bg-[#1a1a1a] dark:text-[#cccccc] dark:hover:bg-[#000000]",
+            "focus-visible:outline-none",
           ].join(" ")}
           style={{ animationDelay: `${delay}ms` }}
           aria-label={`Abrir nota: ${title}`}
@@ -48,9 +48,9 @@ export default function PostCard({
       <DialogContent
         className={[
           "w-[92vw] max-w-none sm:max-w-xl md:max-w-2xl",
-          "max-h-[80vh] overflow-y-auto rounded-md",
-          "ring-1 ring-gray-300/80 bg-white text-gray-700",
-          "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc]",
+          "max-h-[80vh] overflow-y-auto",
+          "bg-white text-gray-700",
+          "dark:bg-[#1a1a1a] dark:text-[#cccccc]",
         ].join(" ")}
       >
         <DialogHeader>

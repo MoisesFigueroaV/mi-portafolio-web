@@ -60,7 +60,7 @@ export default function ShowcaseSwitcher({
         <div
           role="tablist"
           aria-label="Showcase"
-          className="relative mb-5 inline-flex rounded-md ring-1 ring-gray-300/80 p-1 text-xs dark:ring-[#4d4d4d]"
+          className="relative mb-5 inline-flex p-1 text-xs"
         >
           {(["projects", "blog"] as const).map((t) => {
             const active = tab === t
@@ -84,7 +84,7 @@ export default function ShowcaseSwitcher({
           <motion.span
             layout
             layoutId="thumb"
-            className="absolute inset-y-1 rounded bg-gray-900 dark:bg-[#ffffff]"
+            className="absolute inset-y-1 bg-gray-900 dark:bg-[#ffffff]"
             style={{
               width: "calc(50% - 0.5rem)",
               left: tab === "projects" ? "0.5rem" : "calc(50% + 0rem)",
@@ -155,7 +155,7 @@ export default function ShowcaseSwitcher({
               exit={{ opacity: 0, x: -16 }}
               transition={{ duration: 0.28, ease: "easeOut" }}
               className={[
-                "rounded-md p-4 sm:p-6",
+                "p-4 sm:p-6",
                 "ring-1 ring-gray-300/80 bg-white text-gray-700",
                 "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc]",
               ].join(" ")}
@@ -164,7 +164,7 @@ export default function ShowcaseSwitcher({
               <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
                 <button
                   onClick={backToList}
-                  className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
                 >
                   <ArrowLeft className="h-4 w-4" />
                   Volver
@@ -175,7 +175,7 @@ export default function ShowcaseSwitcher({
                       href={activeProject.siteUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
+                      className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
                     >
                       <ExternalLink className="h-4 w-4" />
                       Sitio
@@ -186,7 +186,7 @@ export default function ShowcaseSwitcher({
                       href={activeProject.repoUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
+                      className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
                     >
                       <Github className="h-4 w-4" />
                       Código
@@ -206,7 +206,7 @@ export default function ShowcaseSwitcher({
               <img
                 src={activeProject.image || "/placeholder.svg"}
                 alt={`Vista de ${activeProject.title}`}
-                className="mb-4 w-full rounded-md ring-1 ring-gray-300/80 dark:ring-[#4d4d4d]"
+                className="mb-4 w-full ring-1 ring-gray-300/80 dark:ring-[#4d4d4d]"
               />
 
               {activeProject.description && <p className="text-sm">{activeProject.description}</p>}
@@ -216,7 +216,7 @@ export default function ShowcaseSwitcher({
                   {activeProject.tags.map((t) => (
                     <span
                       key={t}
-                      className="rounded px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
+                      className="px-2 py-0.5 text-[10px] text-gray-500 ring-1 ring-gray-300/80 dark:text-[#4d4d4d] dark:ring-[#4d4d4d]"
                     >
                       {t}
                     </span>
@@ -235,7 +235,7 @@ export default function ShowcaseSwitcher({
               exit={{ opacity: 0, x: -16 }}
               transition={{ duration: 0.28, ease: "easeOut" }}
               className={[
-                "rounded-md p-4 sm:p-6",
+                "p-4 sm:p-6",
                 "ring-1 ring-gray-300/80 bg-white text-gray-700",
                 "dark:ring-[#4d4d4d] dark:bg-[#1a1a1a] dark:text-[#cccccc]",
               ].join(" ")}
@@ -244,7 +244,7 @@ export default function ShowcaseSwitcher({
               <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
                 <button
                   onClick={backToList}
-                  className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 text-xs text-gray-700 ring-1 ring-gray-300/80 hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 dark:text-[#cccccc] dark:ring-[#4d4d4d] dark:hover:bg-[#000000] dark:focus-visible:ring-[#4d4d4d]"
                 >
                   <ArrowLeft className="h-4 w-4" />
                   Volver
